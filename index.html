@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Psychology of Money</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  h1 { text-align: center; }
+  .button-container { text-align: center; margin-top: 30px; }
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 1: No One's Crazy</h1>
+
+<div class="button-container">
+  <button class="button" onclick="showVocabulary()">영단어 표현</button>
+  <button class="button" onclick="showInsights()">인사이트</button>
+</div>
+
+<div id="vocabulary" class="hidden">
+  <h2>영단어 표현</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>영어 표현</th>
+        <th>한국어 뜻</th>
+        <th>영어 예문</th>
+        <th>한국어 예문</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>compelling</td>
+        <td>강렬한, 설득력 있는</td>
+        <td>The evidence was so compelling that the jury quickly reached a verdict.</td>
+        <td>증거가 너무나 강렬해서 배심원단은 빠르게 평결에 도달했다.</td>
+      </tr>
+      <tr>
+        <td>anchored to</td>
+        <td>~에 고정된, ~에 기반을 둔</td>
+        <td>Their investment strategy is anchored to long-term growth.</td>
+        <td>그들의 투자 전략은 장기적인 성장에 기반을 두고 있다.</td>
+      </tr>
+      <tr>
+        <td>fathom</td>
+        <td>헤아리다, 이해하다</td>
+        <td>I cannot fathom why he would make such a decision.</td>
+        <td>나는 그가 왜 그런 결정을 내렸는지 헤아릴 수 없다.</td>
+      </tr>
+      <tr>
+        <td>basking in the glory of</td>
+        <td>~의 영광을 누리다</td>
+        <td>The team was basking in the glory of their championship win.</td>
+        <td>그 팀은 챔피언십 우승의 영광을 누리고 있었다.</td>
+      </tr>
+      <tr>
+        <td>vice versa</td>
+        <td>반대로, 역으로</td>
+        <td>I can teach you English, and vice versa, you can teach me Korean.</td>
+        <td>제가 당신에게 영어를 가르칠 수 있고, 반대로 당신은 저에게 한국어를 가르칠 수 있습니다.</td>
+      </tr>
+      <tr>
+        <td>recreate</td>
+        <td>재현하다, 다시 만들다</td>
+        <td>It's impossible to perfectly recreate the historical atmosphere.</td>
+        <td>역사적 분위기를 완벽하게 재현하는 것은 불가능하다.</td>
+      </tr>
+      <tr>
+        <td>complacent</td>
+        <td>현실에 안주하는, 자기만족적인</td>
+        <td>After a few early successes, he became complacent and stopped working hard.</td>
+        <td>몇 차례의 초기 성공 후에, 그는 현실에 안주하여 열심히 일하는 것을 멈췄다.</td>
+      </tr>
+      <tr>
+        <td>tailwind</td>
+        <td>순풍, 유리한 상황</td>
+        <td>The strong economy provided a tailwind for small businesses.</td>
+        <td>강력한 경제는 중소기업에 순풍을 제공했다.</td>
+      </tr>
+      <tr>
+        <td>incinerators</td>
+        <td>소각로</td>
+        <td>Some people see bonds as wealth incinerators during periods of high inflation.</td>
+        <td>어떤 사람들은 높은 인플레이션 기간 동안 채권을 부의 소각로로 본다.</td>
+      </tr>
+      <tr>
+        <td>intuitively grasp</td>
+        <td>직관적으로 이해하다</td>
+        <td>Children can often intuitively grasp new concepts faster than adults.</td>
+        <td>아이들은 종종 어른들보다 새로운 개념을 직관적으로 더 빨리 이해할 수 있다.</td>
+      </tr>
+      <tr>
+        <td>tangible dream</td>
+        <td>구체적인 꿈</td>
+        <td>For many, buying a lottery ticket is holding onto a tangible dream of a better life.</td>
+        <td>많은 이들에게 로또 구매는 더 나은 삶에 대한 구체적인 꿈을 품는 것이다.</td>
+      </tr>
+      <tr>
+        <td>scrambled together</td>
+        <td>뒤섞여 합쳐진</td>
+        <td>Their business plan was a mix of good ideas scrambled together with some less practical ones.</td>
+        <td>그들의 사업 계획은 좋은 아이디어와 덜 실용적인 아이디어들이 뒤섞여 합쳐진 것이었다.</td>
+      </tr>
+      <tr>
+        <td>atrocious</td>
+        <td>끔찍한, 형편없는</td>
+        <td>The working conditions at the factory were described as atrocious.</td>
+        <td>그 공장의 작업 환경은 끔찍하다고 묘사되었다.</td>
+      </tr>
+      <tr>
+        <td>crippling debt</td>
+        <td>엄청난 빚, 감당하기 어려운 빚</td>
+        <td>Many students are left with crippling debt after college.</td>
+        <td>많은 학생들이 대학 졸업 후 엄청난 빚에 시달린다.</td>
+      </tr>
+      <tr>
+        <td>take for granted</td>
+        <td>~을 당연하게 여기다</td>
+        <td>Don't take your health for granted.</td>
+        <td>건강을 당연하게 여기지 마라.</td>
+      </tr>
+      <tr>
+        <td>misbehavior</td>
+        <td>잘못된 행동, 비행</td>
+        <td>The teacher addressed the students' misbehavior in class.</td>
+        <td>선생님은 수업 중 학생들의 잘못된 행동을 다루었다.</td>
+      </tr>
+      <tr>
+        <td>entitled to</td>
+        <td>~을 누릴 자격이 있는</td>
+        <td>Everyone is entitled to a fair trial.</td>
+        <td>모든 사람은 공정한 재판을 받을 자격이 있다.</td>
+      </tr>
+      <tr>
+        <td>reiterate</td>
+        <td>반복하다, 다시 말하다</td>
+        <td>Let me reiterate my main point: safety is our top priority.</td>
+        <td>제 요점을 다시 한번 강조하겠습니다: 안전이 최우선입니다.</td>
+      </tr>
+      <tr>
+        <td>backbone savings vehicle</td>
+        <td>주요 저축 수단</td>
+        <td>The 401(k) is often considered the backbone savings vehicle for retirement in the U.S.</td>
+        <td>401(k)는 종종 미국 은퇴를 위한 주요 저축 수단으로 여겨진다.</td>
+      </tr>
+      <tr>
+        <td>newbies</td>
+        <td>초보자들</td>
+        <td>As newbies, we made a lot of mistakes, but we learned quickly.</td>
+        <td>초보자로서 우리는 많은 실수를 저질렀지만, 빠르게 배웠다.</td>
+      </tr>
+      <tr>
+        <td>winging it</td>
+        <td>즉흥적으로 하다, 임기응변으로 하다</td>
+        <td>I didn't have time to prepare, so I just had to wing it during the presentation.</td>
+        <td>준비할 시간이 없어서 발표 때 그냥 즉흥적으로 해야 했다.</td>
+      </tr>
+      <tr>
+        <td>acclimated</td>
+        <td>적응된</td>
+        <td>It took some time to get acclimated to the new environment.</td>
+        <td>새로운 환경에 적응하는 데 시간이 좀 걸렸다.</td>
+      </tr>
+      <tr>
+        <td>at most</td>
+        <td>기껏해야</td>
+        <td>The meeting will take an hour at most.</td>
+        <td>회의는 기껏해야 한 시간 걸릴 것이다.</td>
+      </tr>
+      <tr>
+        <td>labor force participation rate</td>
+        <td>경제활동참가율</td>
+        <td>The labor force participation rate for women has increased significantly over the decades.</td>
+        <td>여성의 경제활동참가율은 수십 년 동안 크게 증가했다.</td>
+      </tr>
+      <tr>
+        <td>exceeded</td>
+        <td>초과했다</td>
+        <td>The company's profits exceeded all expectations.</td>
+        <td>그 회사의 이익은 모든 예상을 초과했다.</td>
+      </tr>
+      <tr>
+        <td>classified by</td>
+        <td>~에 의해 분류된</td>
+        <td>The documents were classified by their level of secrecy.</td>
+        <td>그 문건들은 비밀 수준에 따라 분류되었다.</td>
+      </tr>
+      <tr>
+        <td>wildly exaggerated</td>
+        <td>터무니없이 과장된</td>
+        <td>The rumors of his wealth were wildly exaggerated.</td>
+        <td>그의 부에 대한 소문은 터무니없이 과장되었다.</td>
+      </tr>
+      <tr>
+        <td>took hold</td>
+        <td>자리 잡다, 확고해지다</td>
+        <td>The idea of universal healthcare slowly took hold in the country.</td>
+        <td>보편적 의료보험의 개념이 그 나라에 서서히 자리 잡았다.</td>
+      </tr>
+      <tr>
+        <td>adjusted for inflation</td>
+        <td>인플레이션을 감안하여 조정된</td>
+        <td>The average salary, adjusted for inflation, has remained stagnant.</td>
+        <td>인플레이션을 감안하여 조정된 평균 급여는 정체되어 있다.</td>
+      </tr>
+      <tr>
+        <td>income groups</td>
+        <td>소득 계층</td>
+        <td>The tax policy disproportionately affects lower income groups.</td>
+        <td>그 조세 정책은 저소득 계층에 불균형적으로 영향을 미친다.</td>
+      </tr>
+      <tr>
+        <td>safety nets</td>
+        <td>사회 안전망</td>
+        <td>The government provides various safety nets for its citizens.</td>
+        <td>정부는 시민들에게 다양한 사회 안전망을 제공한다.</td>
+      </tr>
+      <tr>
+        <td>subconscious reasoning</td>
+        <td>잠재의식적 추론</td>
+        <td>Our decisions are often influenced by subconscious reasoning.</td>
+        <td>우리의 결정은 종종 잠재의식적 추론에 의해 영향을 받는다.</td>
+      </tr>
+      <tr>
+        <td>prospects</td>
+        <td>전망, 가능성</td>
+        <td>The prospects for economic recovery are looking good.</td>
+        <td>경제 회복 전망이 좋다.</td>
+      </tr>
+      <tr>
+        <td>disagree about</td>
+        <td>~에 대해 의견이 다르다</td>
+        <td>They often disagree about politics.</td>
+        <td>그들은 종종 정치에 대해 의견이 다르다.</td>
+      </tr>
+      <tr>
+        <td>prioritize</td>
+        <td>우선순위를 정하다</td>
+        <td>You need to prioritize your tasks to manage your time effectively.</td>
+        <td>시간을 효과적으로 관리하려면 업무의 우선순위를 정해야 한다.</td>
+      </tr>
+      <tr>
+        <td>widespread emotional experience</td>
+        <td>널리 퍼진 감정적 경험</td>
+        <td>The pandemic was a widespread emotional experience that affected everyone.</td>
+        <td>팬데믹은 모든 사람에게 영향을 미친 널리 퍼진 감정적 경험이었다.</td>
+      </tr>
+      <tr>
+        <td>genuinely recreate</td>
+        <td>진정으로 재현하다</td>
+        <td>It's hard to genuinely recreate the feeling of a historical event without having lived through it.</td>
+        <td>역사적 사건을 겪지 않고 그 느낌을 진정으로 재현하기는 어렵다.</td>
+      </tr>
+      <tr>
+        <td>emotional scars</td>
+        <td>정서적 상처</td>
+        <td>The war left deep emotional scars on the survivors.</td>
+        <td>전쟁은 생존자들에게 깊은 정서적 상처를 남겼다.</td>
+      </tr>
+      <tr>
+        <td>stock market declines</td>
+        <td>주식 시장 하락</td>
+        <td>Investors are always concerned about sudden stock market declines.</td>
+        <td>투자자들은 갑작스러운 주식 시장 하락에 대해 항상 우려한다.</td>
+      </tr>
+      <tr>
+        <td>impact their lives</td>
+        <td>그들의 삶에 영향을 미치다</td>
+        <td>The decision you make today could significantly impact their lives.</td>
+        <td>오늘 내리는 결정이 그들의 삶에 상당한 영향을 미칠 수 있다.</td>
+      </tr>
+      <tr>
+        <td>tiny sliver</td>
+        <td>아주 작은 조각</td>
+        <td>Our personal experiences are just a tiny sliver of the world's reality.</td>
+        <td>우리의 개인적인 경험은 세상의 현실 중 아주 작은 조각일 뿐이다.</td>
+      </tr>
+      <tr>
+        <td>willingness to bear risk</td>
+        <td>위험을 감수하려는 의지</td>
+        <td>Her willingness to bear risk helped her succeed in business.</td>
+        <td>그녀의 위험을 감수하려는 의지가 사업에서 성공하는 데 도움이 되었다.</td>
+      </tr>
+      <tr>
+        <td>coincided almost perfectly with</td>
+        <td>~와 거의 완벽하게 일치했다</td>
+        <td>His rise to fame coincided almost perfectly with the advent of social media.</td>
+        <td>그의 명성 상승은 소셜 미디어의 출현과 거의 완벽하게 일치했다.</td>
+      </tr>
+      <tr>
+        <td>impressionable years</td>
+        <td>감수성이 예민한 시기, 인상 깊게 받아들이는 시기</td>
+        <td>Children are in their most impressionable years when they learn new languages.</td>
+        <td>아이들은 새로운 언어를 배울 때 가장 감수성이 예민한 시기에 있다.</td>
+      </tr>
+      <tr>
+        <td>stretched noticeably less far</td>
+        <td>눈에 띄게 덜 유용했다 (구매력이 떨어졌다)</td>
+        <td>Due to inflation, our paychecks stretched noticeably less far than before.</td>
+        <td>인플레이션 때문에, 우리의 급여는 예전보다 눈에 띄게 덜 유용했다.</td>
+      </tr>
+      <tr>
+        <td>disproportionately affects</td>
+        <td>불균형적으로 영향을 미치다</td>
+        <td>The new policy disproportionately affects small businesses.</td>
+        <td>새로운 정책은 중소기업에 불균형적으로 영향을 미친다.</td>
+      </tr>
+      <tr>
+        <td>local stock markets were wiped out</td>
+        <td>지역 주식 시장이 전멸했다</td>
+        <td>After the war, local stock markets were wiped out in many countries.</td>
+        <td>전쟁 후에 많은 국가에서 지역 주식 시장이 전멸했다.</td>
+      </tr>
+      <tr>
+        <td>make sense to</td>
+        <td>~에게 이해가 되다, 합리적이다</td>
+        <td>His explanation didn't make sense to me.</td>
+        <td>그의 설명은 나에게 이해가 되지 않았다.</td>
+      </tr>
+      <tr>
+        <td>plugging it into</td>
+        <td>~에 삽입하다, ~에 적용하다</td>
+        <td>He's good at plugging new information into existing systems.</td>
+        <td>그는 새로운 정보를 기존 시스템에 적용하는 데 능숙하다.</td>
+      </tr>
+      <tr>
+        <td>misinformed</td>
+        <td>잘못된 정보를 가진</td>
+        <td>Many people were misinformed about the new regulations.</td>
+        <td>많은 사람들이 새로운 규제에 대해 잘못된 정보를 가지고 있었다.</td>
+      </tr>
+      <tr>
+        <td>rotten marketing</td>
+        <td>형편없는 마케팅</td>
+        <td>The company's failure was partly due to rotten marketing.</td>
+        <td>그 회사의 실패는 부분적으로 형편없는 마케팅 때문이었다.</td>
+      </tr>
+      <tr>
+        <td>misjudge the consequences</td>
+        <td>결과를 잘못 판단하다</td>
+        <td>He misjudged the consequences of his actions and faced severe penalties.</td>
+        <td>그는 자신의 행동의 결과를 잘못 판단하여 심각한 처벌을 받았다.</td>
+      </tr>
+      <tr>
+        <td>checks the boxes</td>
+        <td>필요한 조건을 충족시키다</td>
+        <td>The candidate checks all the boxes for this position.</td>
+        <td>그 후보자는 이 직위에 필요한 모든 조건을 충족시킨다.</td>
+      </tr>
+      <tr>
+        <td>persist</td>
+        <td>지속되다, 계속되다</td>
+        <td>Despite the challenges, their efforts to help the community persist.</td>
+        <td>어려움에도 불구하고, 지역 사회를 돕기 위한 그들의 노력은 지속되고 있다.</td>
+      </tr>
+      <tr>
+        <td>root of many of our financial decisions</td>
+        <td>우리의 많은 재정적 결정의 근본 원인</td>
+        <td>Understanding personal biases is key to uncovering the root of many of our financial decisions.</td>
+        <td>개인적인 편견을 이해하는 것이 우리의 많은 재정적 결정의 근본 원인을 밝히는 데 중요하다.</td>
+      </tr>
+      <tr>
+        <td>modern foundation of money decisions</td>
+        <td>돈 결정의 현대적 기반</td>
+        <td>The modern foundation of money decisions revolves around saving and investing for the future.</td>
+        <td>돈 결정의 현대적 기반은 미래를 위한 저축과 투자에 집중되어 있다.</td>
+      </tr>
+      <tr>
+        <td>common investor’s saving and investing decisions</td>
+        <td>일반 투자자의 저축 및 투자 결정</td>
+        <td>Retirement accounts are a major driver of the common investor's saving and investing decisions.</td>
+        <td>은퇴 계좌는 일반 투자자의 저축 및 투자 결정의 주요 동력이다.</td>
+      </tr>
+      <tr>
+        <td>nothing close to a proper pension</td>
+        <td>제대로 된 연금과는 거리가 멀다</td>
+        <td>The initial benefits were nothing close to a proper pension, just a small amount.</td>
+        <td>초기 혜택은 제대로 된 연금과는 거리가 멀었고, 단지 소액이었다.</td>
+      </tr>
+      <tr>
+        <td>accumulated experience</td>
+        <td>축적된 경험</td>
+        <td>There isn't enough accumulated experience in this new field to draw clear conclusions.</td>
+        <td>이 새로운 분야에는 명확한 결론을 내릴 만큼 충분한 축적된 경험이 없다.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="insights" class="hidden">
+  <h2>인사이트</h2>
+  <ol>
+    <li>**개인의 경험이 돈에 대한 시각을 형성한다**: 돈에 대한 우리의 생각과 행동은 우리가 세상에서 겪는 매우 작은 비율의 개인적인 경험에 의해 크게 좌우됩니다. 아무리 똑똑한 사람이라도 서로 다른 삶의 경험을 통해 돈에 대한 상이한 믿음, 목표, 예측을 가질 수 있습니다.</li>
+    <li>**공감과 이해의 중요성**: 다른 사람들이 돈에 대해 "이상한" 결정을 내린다고 생각할 때, 그들의 배경과 경험을 이해하려는 노력이 필요합니다. 예를 들어, 가난하게 자란 사람과 부유한 은행가의 자녀는 위험과 보상에 대해 완전히 다른 관점을 가질 수 있습니다. 이는 판단하기보다는 공감하고 이해하려는 태도가 중요함을 시사합니다.</li>
+    <li>**금융 시스템의 상대적 신생아적 특성**: 현대의 저축 및 투자와 같은 돈 관련 결정의 토대는 생각보다 역사가 짧습니다. 예를 들어, 401(k)나 Roth IRA와 같은 은퇴 저축 수단은 비교적 최근에 등장했으며, 이는 많은 사람들이 돈을 다루는 데 서툴고 실수를 할 수밖에 없는 이유를 설명합니다. 우리는 이 게임의 "초보자"에 가깝습니다.</li>
+    <li>**데이터만으로는 부족한 인간의 행동**: 스프레드시트가 과거의 주식 시장 하락 빈도를 모델링할 수 있지만, 자녀의 미래에 대한 부모의 두려움과 같은 감정적 요소를 모델링할 수는 없습니다. 역사를 공부하는 것이 이해를 돕지만, 직접 경험하지 않는 한 행동을 변화시킬 만큼 깊이 이해하기는 어렵습니다. 인간의 금융 결정은 단순한 합리성을 넘어 개인의 역사, 감정, 자아, 자부심 등 복합적인 요소에 의해 형성됩니다.</li>
+  </ol>
+</div>
+
+<script>
+  function showVocabulary() {
+    document.getElementById('vocabulary').classList.remove('hidden');
+    document.getElementById('insights').classList.add('hidden');
+  }
+
+  function showInsights() {
+    document.getElementById('insights').classList.remove('hidden');
+    document.getElementById('vocabulary').classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>
